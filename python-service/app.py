@@ -50,6 +50,19 @@ add_routes(
     path="/translate",
 )
 
+# 根路径欢迎页面
+@app.get("/")
+def root():
+    return {
+        "message": "LangChain Translation Service",
+        "version": "1.0",
+        "endpoints": {
+            "/health": "Health check",
+            "/translate/invoke": "Translation API (POST)",
+            "/translate/playground": "Interactive API playground"
+        }
+    }
+
 # 健康检查接口
 @app.get("/health")
 def health_check():
