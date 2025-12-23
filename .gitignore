@@ -1,0 +1,35 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/
+
+# Docker
+.env
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 旧项目文件夹
+local_langchain_test/
+mine_langchain/
